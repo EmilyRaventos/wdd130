@@ -1,3 +1,6 @@
+/* Adding the font import makes a grey bar show at the top of the screen */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap");
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -113,7 +116,7 @@ main section img {
 .mountains {
   grid-column: 2/7;
   grid-row: 5/8;
-  box-sizing: 5px 5px 10px #6f7364;
+  box-shadow: 5px 5px 10px #6f7364;
 }
 
 .card-img {
@@ -162,6 +165,7 @@ main section img {
   padding: 15px 30px;
   margin-top: 50px;
   border-radius: 5px;
+  font-family: "Roboto";
 }
 
 .book:hover,
@@ -196,13 +200,14 @@ h4 {
 
 .msg h2 {
   color: white;
-  font-family: "Geneva", "Comic Sans MS", "Tahoma", "sans-serif";
+  font-family: "Roboto";
 }
 
 .msg p {
   color: white;
   font-size: 0.8em;
   padding-bottom: 15px;
+  font-family: "Geneva", "Comic Sans MS", "Tahoma", "sans-serif";
 }
 
 /* Bottom */

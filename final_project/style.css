@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel+Decorative&family=Rouge+Script&display=swap");
+
+/* Section 0.5: Announcement banner */
+.announcements {
+  background-color: #d9c2b0;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+
+#content {
+  background-color: #ece6d8;
+  display: grid;
+  grid-template-columns: ratio(5, 1fr);
+  width: 100%;
+}
+
+/* Section 1: Navigation bar */
+nav {
+  background-color: #8bab78;
+  font-family: "Cinzel Decorative";
+  color: #ece6d8;
+}
+
+/* Section 2: Welcome pic */
+.welcome {
+  font-family: "Amatic CS";
+  color: #383d31;
+}
+
+/* Section 3: picture buttons */
+.button-menu {
+  position: relative;
+  text-align: center;
+  background-color: #d0c8b9;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.button-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-family: "Rouge Script";
+  font-size: 20px;
+  color: #383d31;
+  z-index: 2;
+}
+
+.button-pic1 {
+  margin-top: 20%;
+  margin-left: 88px;
+  width: 75%;
+  height: 100%;
+}
+.button-pic2 {
+  margin-top: 20%;
+  margin-left: 50px;
+  width: 75%;
+  height: 100%;
+}
+.button-pic3 {
+  margin-top: 20%;
+  margin-left: 50px;
+  width: 75%;
+  height: 100%;
+}
+.button-pic4 {
+  margin-top: 20%;
+  margin-left: 50px;
+  width: 75%;
+  height: 100%;
+}
+
+/* Section 4: Pic and mission statement */
+
+/* Section 5: Gallery */
+
+/* Section 6: Reviews */
+
+/* Section 7: Footer */
