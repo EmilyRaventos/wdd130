@@ -49,7 +49,7 @@ body {
   height: 725px;
   background-color: #aed8da;
   grid-column: 1/11;
-  grid-row: 4/9;
+  grid-row: 3/8;
 }
 
 main section {
@@ -204,6 +204,54 @@ h4 {
 }
 
 .msg p {
+  color: white;
+  font-size: 0.8em;
+  padding-bottom: 15px;
+  font-family: "Geneva", "Comic Sans MS", "Tahoma", "sans-serif";
+}
+
+/* FAQ Page */
+#background2 {
+  height: 500px;
+  background-color: #aed8da;
+  grid-column: 1/11;
+  grid-row: 7/10;
+}
+
+.msg2 {
+  background-color: #294545;
+  line-height: 1.5em;
+  padding: 35px;
+  grid-column: 2/5;
+  grid-row: 8/9;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.msg2 h2 {
+  color: white;
+  font-family: "Roboto";
+}
+
+.msg2 p {
+  color: white;
+  font-size: 0.8em;
+  padding-bottom: 15px;
+  font-family: "Geneva", "Comic Sans MS", "Tahoma", "sans-serif";
+}
+
+.msg3 {
+  background-color: #294545;
+  line-height: 1.5em;
+  padding: 35px;
+  grid-column: 7/10;
+  grid-row: 8/9;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.msg3 h2 {
+  color: white;
+  font-family: "Roboto";
+}
+
+.msg3 p {
   color: white;
   font-size: 0.8em;
   padding-bottom: 15px;
