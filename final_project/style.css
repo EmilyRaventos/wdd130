@@ -1,51 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel+Decorative&family=Rouge+Script&display=swap");
 
+.content {
+  width: 100%;
+}
+
+/* Section 1 */
 .announcements {
-  background-color: blueviolet;
+  background-color: #d9c2b0;
+  font-family: Helvetica;
   margin-bottom: -1em;
+  text-align: center;
+}
+
+.announcements p {
+  margin: 1em 0 0 -1;
+  padding: 0.5em 0;
 }
 
 header {
-  background-color: aliceblue;
+  background-color: #a6a998;
   z-index: -1;
 }
 nav {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: 1fr 1fr 1.5fr;
   grid-gap: 10px;
   z-index: 1;
 }
 
 .logo {
-  /* grid-column: 1/4; */
-  padding: 0%;
-  margin: 1em;
-  max-width: 85%;
+  grid-column: 1/2;
+  margin: 1em 2em;
+  max-width: 90%;
+  display: inline;
 }
 
-.logo-link {
-  position: relative;
-  /* width: 8em;
-  height: 100%; */
-  grid-column: 1/3;
-  box-sizing: border-box;
-  z-index: 1;
-  display: grid;
+.yt,
+.insta,
+.tumblr,
+.ao3 {
+  padding: 0%;
+  max-width: 60%;
 }
 
 .social {
-  grid-column: 3/6;
-  margin: auto;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto 3em 1em 3em;
+  text-align: center;
 }
 
 .pages {
-  grid-column: 6/9;
+  grid-column: 3/4;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  margin: 3em;
 }
 
 .pages a {
   font-family: "Cinzel Decorative";
+  color: #e5e3d7;
+  text-decoration: none;
 }
 
 #home-page {
@@ -66,37 +83,65 @@ nav {
   margin: auto;
 }
 
+#commisions-page {
+  grid-column: 4/5;
+  text-align: center;
+  margin: auto;
+}
+
+#writings-page {
+  grid-column: 5/6;
+  text-align: center;
+  margin: auto;
+}
+
+#about-page {
+  grid-column: 6/7;
+  text-align: center;
+  margin: auto;
+}
+
+/* Section 2 */
 .welcome {
-  background-color: bisque;
   width: 100%;
   height: 40em;
+  margin-top: -1em;
+  color: #524f4a;
 }
 
-.button-menu {
-  background-color: aquamarine;
+.welcome p {
+  z-index: 1;
+  text-align: center;
+  /* margin: auto; */
+}
+
+.welcome-logo {
+  max-width: 50%;
+}
+
+/* Section 3 */
+/* .button-menu {
   width: 100%;
   height: 20em;
-}
+} */
 
-.contact-me {
-  background-color: beige;
+/* Section 4 */
+/* .contact-me {
   width: 100%;
   height: 30em;
-}
+} */
 
-.gallery {
-  background-color: aliceblue;
+/* Section 5 */
+/* .gallery {
   width: 100%;
-  height: 20em;
-}
+  /* height: 20em; */
+/* }
 
-.reviews {
-  background-color: blanchedalmond;
+/* Section 6 */
+/* .reviews {
   width: 100%;
-  height: 20em;
-}
+  /* height: 20em; */
+/* } */
 
-footer {
-  background-color: blueviolet;
-  width: 100%;
-}
+/* Section 7 */
+/* footer {} */
