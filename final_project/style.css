@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel+Decorative&family=Rouge+Script&display=swap");
 
-.content {
+#content {
   width: 100%;
 }
 
@@ -18,50 +18,68 @@
 }
 
 header {
-  background-color: #a6a998;
+  /* background-color: #a6a998; */
   z-index: -1;
 }
 nav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.5fr;
+  grid-template-columns: 12em 1.5em 1.5em 1.5em 1.5em auto;
   grid-gap: 10px;
   z-index: 1;
 }
 
 .logo {
+  box-sizing: border-box;
   grid-column: 1/2;
-  margin: 1em 2em;
-  max-width: 90%;
+  margin: 1.5em 2em;
+  max-width: 100%;
+  padding-right: 3em;
   display: inline;
 }
 
-.yt,
-.insta,
-.tumblr,
-.ao3 {
-  padding: 0%;
-  max-width: 60%;
+.insta {
+  border-radius: 50%;
+  max-width: 100%;
+  margin: auto;
+}
+.yt {
+  border-radius: 50%;
+  max-width: 100%;
+  margin: auto;
+}
+.tumblr {
+  border-radius: 50%;
+  max-width: 100%;
+  margin: auto;
+}
+.a03 {
+  border-radius: 50%;
+  max-width: 100%;
+  margin: auto;
 }
 
 .social {
   grid-column: 2/3;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: auto 3em 1em 3em;
+  max-width: 100%;
+  margin: auto;
   text-align: center;
 }
 
 .pages {
-  grid-column: 3/4;
+  grid-column: 6/7;
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5em;
-  margin: 3em;
+  /* margin: 3em 0 3em 5em; */
+  margin-left: 25em;
+  margin-right: 3em;
 }
 
 .pages a {
   font-family: "Cinzel Decorative";
-  color: #e5e3d7;
+  color: #524f4a;
   text-decoration: none;
 }
 
@@ -101,28 +119,132 @@ nav {
   margin: auto;
 }
 
+.main {
+  display: grid;
+  grid-template-rows: 20em 20em 20em 20em 20em;
+}
+
 /* Section 2 */
 .welcome {
-  width: 100%;
-  height: 40em;
-  margin-top: -1em;
+  grid-row: 1/2;
+  height: 100%;
+  margin: auto;
   color: #524f4a;
 }
 
 .welcome p {
   z-index: 1;
   text-align: center;
-  /* margin: auto; */
+  margin-top: 2em;
+  margin-bottom: -5em;
+  font-family: "Cinzel Decorative";
 }
 
 .welcome-logo {
-  max-width: 50%;
+  max-height: 100%;
 }
 
 /* Section 3 */
-/* .button-menu {
-  width: 100%;
-  height: 20em;
+.button-menu {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  max-width: 100%;
+  margin: -2em 3em;
+  grid-gap: 5em;
+}
+
+.button-menu p {
+  z-index: 1;
+}
+
+.button-pic1 {
+  max-width: 100%;
+  grid-column: 1/2;
+  display: inline;
+  border-radius: 7%;
+}
+
+/* .button-text1 {
+  max-width: 100%;
+  z-index: 1;
+  grid-column: 1/2;
+  margin: auto;
+  display: inline;
+} */
+
+.button-pic2 {
+  max-width: 100%;
+  grid-column: 2/3;
+  display: inline;
+  border-radius: 7%;
+}
+
+/* .button-text2 {
+  max-width: 100%;
+  z-index: 1;
+  grid-column: 2/3;
+  margin: auto;
+  display: inline;
+} */
+
+.button-pic3 {
+  max-width: 100%;
+  grid-column: 3/4;
+  display: inline;
+  border-radius: 7%;
+}
+
+/* .button-text3 {
+  max-width: 100%;
+  z-index: 1;
+  grid-column: 3/4;
+  margin: auto;
+  display: inline;
+} */
+
+.button-pic4 {
+  max-width: 100%;
+  grid-column: 4/5;
+  display: inline;
+  border-radius: 7%;
+}
+
+/* .button-text4 {
+  max-width: 100%;
+  z-index: 1;
+  margin: auto;
+  grid-column: 4/5;
+  display: inline;
+} */
+
+/* .button-pic1 {
+  grid-column: 1/2;
+  /* max-width: 40px; */
+/* border-radius: 5%; */
+/* }  */
+/* .button-pic2 {
+  grid-column: 2/3;
+  /* max-width: 40px; */
+/* border-radius: 5%; */
+/* } */
+/* .button-pic3 {
+  grid-column: 3/4;
+  /* max-width:/ 40px; */
+/* border-radius: 5%; */
+/* } */
+/* .button-pic4 {
+  grid-column: 4/5;
+  /* max-width: 40px; */
+/* border-radius: 5%; */
+/* } */
+
+/* .button-pic1 .button-pic2 .button-pic3 .button-pic4 {
+  border-radius: 5%;
+  max-width: 480px;
+  margin-bottom: 0;
+  padding: 0;
 } */
 
 /* Section 4 */
@@ -132,16 +254,24 @@ nav {
 } */
 
 /* Section 5 */
-/* .gallery {
-  width: 100%;
-  /* height: 20em; */
-/* }
+.gallery {
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* width: 100%; */
+  /* height: 20em;  */
+}
+
+.gallery-preview {
+  max-width: 100%;
+}
 
 /* Section 6 */
-/* .reviews {
+.reviews {
+  grid-row: 6/7;
   width: 100%;
   /* height: 20em; */
-/* } */
+}
 
 /* Section 7 */
 /* footer {} */
