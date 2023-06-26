@@ -23,7 +23,7 @@ header {
 }
 nav {
   display: grid;
-  grid-template-columns: 12em 1.5em 1.5em 1.5em 1.5em auto;
+  grid-template-columns: 12em 12em auto;
   grid-gap: 10px;
   z-index: 1;
 }
@@ -35,6 +35,16 @@ nav {
   max-width: 100%;
   padding-right: 3em;
   display: inline;
+}
+
+.social {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  max-width: 75%;
+  margin: auto;
+  text-align: center;
 }
 
 .insta {
@@ -52,29 +62,27 @@ nav {
   max-width: 100%;
   margin: auto;
 }
-.a03 {
+.spotify {
+  border-radius: 50%;
+  max-width: 100%;
+  margin: auto;
+}
+.pinterest {
   border-radius: 50%;
   max-width: 100%;
   margin: auto;
 }
 
-.social {
-  grid-column: 2/3;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+/* .a03 {
+  border-radius: 5%;
   max-width: 100%;
   margin: auto;
-  text-align: center;
-}
+} */
 
 .pages {
-  grid-column: 6/7;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column: 3/4;
   grid-gap: 0.5em;
-  /* margin: 3em 0 3em 5em; */
-  margin-left: 25em;
-  margin-right: 3em;
+  margin: 6% 0 0 46%;
 }
 
 .pages a {
@@ -84,37 +92,37 @@ nav {
 }
 
 #home-page {
-  grid-column: 1/2;
+  /* grid-column: 1/2; */
   text-align: center;
   margin: auto;
 }
 
 #portfolio-page {
-  grid-column: 2/3;
+  /* grid-column: 2/3; */
   text-align: center;
   margin: auto;
 }
 
 #faq-page {
-  grid-column: 3/4;
+  /* grid-column: 3/4; */
   text-align: center;
   margin: auto;
 }
 
 #commisions-page {
-  grid-column: 4/5;
+  /* grid-column: 4/5; */
   text-align: center;
   margin: auto;
 }
 
 #writings-page {
-  grid-column: 5/6;
+  /* grid-column: 5/6; */
   text-align: center;
   margin: auto;
 }
 
 #about-page {
-  grid-column: 6/7;
+  /* grid-column: 6/7; */
   text-align: center;
   margin: auto;
 }
@@ -145,7 +153,10 @@ nav {
 }
 
 /* Section 3 */
+
 .button-menu {
+  /* background-color: #8da34f; */
+  position: relative;
   grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -156,96 +167,75 @@ nav {
 }
 
 .button-menu p {
+  position: absolute;
+  color: white;
+  font-size: larger;
   z-index: 1;
+  max-width: 100%;
 }
-
+.button:hover {
+  /* opacity: 0.8; */
+  transform: scale(1.05);
+}
 .button-pic1 {
+  position: absolute;
   max-width: 100%;
   grid-column: 1/2;
   display: inline;
   border-radius: 7%;
+  box-shadow: 5px 5px 10px #6f7364;
 }
 
-/* .button-text1 {
-  max-width: 100%;
-  z-index: 1;
+.button-text1 {
   grid-column: 1/2;
-  margin: auto;
-  display: inline;
-} */
+  margin-top: 43%;
+  margin-left: 35%;
+}
 
 .button-pic2 {
+  position: absolute;
   max-width: 100%;
   grid-column: 2/3;
   display: inline;
   border-radius: 7%;
+  box-shadow: 5px 5px 10px #6f7364;
 }
 
-/* .button-text2 {
-  max-width: 100%;
-  z-index: 1;
+.button-text2 {
   grid-column: 2/3;
-  margin: auto;
-  display: inline;
-} */
+  margin-top: 43%;
+  margin-left: 35%;
+}
 
 .button-pic3 {
+  position: absolute;
   max-width: 100%;
   grid-column: 3/4;
   display: inline;
   border-radius: 7%;
+  box-shadow: 5px 5px 10px #6f7364;
 }
 
-/* .button-text3 {
-  max-width: 100%;
-  z-index: 1;
+.button-text3 {
   grid-column: 3/4;
-  margin: auto;
-  display: inline;
-} */
+  margin-top: 43%;
+  margin-left: 29%;
+}
 
 .button-pic4 {
+  position: absolute;
   max-width: 100%;
   grid-column: 4/5;
   display: inline;
   border-radius: 7%;
+  box-shadow: 5px 5px 10px #6f7364;
 }
 
-/* .button-text4 {
-  max-width: 100%;
-  z-index: 1;
-  margin: auto;
+.button-text4 {
   grid-column: 4/5;
-  display: inline;
-} */
-
-/* .button-pic1 {
-  grid-column: 1/2;
-  /* max-width: 40px; */
-/* border-radius: 5%; */
-/* }  */
-/* .button-pic2 {
-  grid-column: 2/3;
-  /* max-width: 40px; */
-/* border-radius: 5%; */
-/* } */
-/* .button-pic3 {
-  grid-column: 3/4;
-  /* max-width:/ 40px; */
-/* border-radius: 5%; */
-/* } */
-/* .button-pic4 {
-  grid-column: 4/5;
-  /* max-width: 40px; */
-/* border-radius: 5%; */
-/* } */
-
-/* .button-pic1 .button-pic2 .button-pic3 .button-pic4 {
-  border-radius: 5%;
-  max-width: 480px;
-  margin-bottom: 0;
-  padding: 0;
-} */
+  margin-top: 43%;
+  margin-left: 33%;
+}
 
 /* Section 4 */
 /* .contact-me {
@@ -275,3 +265,20 @@ nav {
 
 /* Section 7 */
 /* footer {} */
+
+.title-thing {
+  text-align: center;
+  font-family: "Cinzel Decorative";
+  font-size: larger;
+}
+
+.question {
+  text-align: center;
+  font-family: "Cinzel Decorative";
+  /* font-size: medium; */
+}
+
+.faq-content {
+  margin: 4em 17em 0 17em;
+  text-align: center;
+}
