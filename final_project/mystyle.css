@@ -377,7 +377,8 @@ footer {
   padding-bottom: 20px;
 }
 
-.footer-link {
+.footer-link,
+.footer-link2 {
   text-decoration: none;
   color: #cbc3ba;
 }
@@ -396,5 +397,60 @@ footer {
 
 .faq-content {
   margin: 4em 17em 0 17em;
+  text-align: center;
+}
+
+.faq-main {
+  position: relative;
+}
+
+.faq-vine1 {
+  position: absolute;
+  z-index: -1;
+  transform: scaleY(-1) rotate(110deg);
+  max-width: 28%;
+  margin-top: -13em;
+  margin-left: -2em;
+}
+
+.faq-vine2 {
+  position: absolute;
+  z-index: -1;
+  transform: scaleX(-1) rotate(90deg);
+  max-width: 28%;
+  margin-top: -13.5em;
+  margin-left: 74%;
+}
+
+/* Second set of vines */
+.faq-vine3 {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(90deg);
+  max-width: 28%;
+  margin-top: -10em;
+  margin-left: -2em;
+}
+
+.faq-vine4 {
+  position: absolute;
+  z-index: -1;
+  transform: scaleX(-1) rotate(90deg);
+  max-width: 28%;
+  margin-top: -10em;
+  margin-left: 74%;
+}
+/* 
+.form-header-spot {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+} */
+
+.form-header {
+  max-width: 45.5%;
+  margin: 0 28%;
+}
+
+.google-form {
   text-align: center;
 }
