@@ -341,18 +341,6 @@ nav {
   filter: invert(0.4);
 }
 
-.vine-divide {
-  z-index: -2;
-  grid-template-columns: 7/8;
-}
-
-.small-vine2 {
-  transform: rotate(90deg);
-  max-width: 35%;
-  margin-top: -13em;
-  margin-left: -2em;
-}
-
 /* Section 6 */
 .reviews {
   grid-row: 7/8;
@@ -399,8 +387,29 @@ nav {
   padding: 30px;
 }
 
+.vine-divide {
+  z-index: -2;
+  grid-template-columns: 7/8;
+}
+
+.small-vine2 {
+  transform: scaleY(-1) rotate(90deg);
+  max-width: 35%;
+  margin-top: -13em;
+  margin-left: -2em;
+}
+
+.small-vine1 {
+  transform: scaleX(-1) rotate(90deg);
+  max-width: 35%;
+  margin-top: -16em;
+  margin-left: 64%;
+}
+
 /* Section 7 */
-/* footer {} */
+footer {
+  padding-top: 5em;
+}
 
 .title-thing {
   text-align: center;
