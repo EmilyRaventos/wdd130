@@ -409,7 +409,17 @@ nav {
 
 /* Section 7 */
 footer {
-  padding-top: 5em;
+  padding-top: 10em;
+  font-family: Helvetica, sans-serif;
+  color: #cbc3ba;
+  font-size: small;
+  text-align: center;
+  line-height: 20%;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #cbc3ba;
 }
 
 .title-thing {
