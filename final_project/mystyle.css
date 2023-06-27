@@ -6,7 +6,7 @@
 
 /* Section 1 */
 .announcements {
-  background-color: #a6a998;
+  background-color: #d9c2b0;
   font-family: Helvetica;
   margin-bottom: -1em;
   text-align: center;
@@ -67,17 +67,12 @@ nav {
   max-width: 100%;
   margin: auto;
 }
+
 .pinterest {
   border-radius: 50%;
   max-width: 100%;
   margin: auto;
 }
-
-/* .a03 {
-  border-radius: 5%;
-  max-width: 100%;
-  margin: auto;
-} */
 
 .pages {
   grid-column: 3/4;
@@ -130,7 +125,7 @@ nav {
 /* Below nav bar */
 .main {
   display: grid;
-  grid-template-rows: 20em 20em 27em 20em 20em;
+  grid-template-rows: 20em 20em 27em 21em 4em /*2em*/ 40em;
 }
 
 /* Section 2 */
@@ -299,19 +294,89 @@ nav {
 
 /* Section 5 */
 .gallery {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
 .gallery-preview {
+  position: relative;
   max-width: 100%;
+}
+
+.gallery-preview:hover {
+  transform: scale(1.07);
+  z-index: 1;
+}
+
+.gallery-link-section {
+  grid-row: 5/6;
+  margin-top: 1em;
+  margin-left: 43.5%;
+}
+
+.gallery-link {
+  grid-row: 5/6;
+  font-family: "Cinzel Decorative";
+  font-size: 2em;
+  text-decoration: none;
+  color: #524f4a;
+}
+
+.gallery-circles {
+  z-index: 3;
+  position: absolute;
+  bottom: 18px;
+  left: 19px;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 39em;
+}
+
+.gallery-circle {
+  max-height: 0.75em;
+}
+
+.gallery-circle:hover {
+  filter: invert(0.4);
 }
 
 /* Section 6 */
 .reviews {
-  grid-row: 5/6;
+  position: relative;
+  grid-row: 6/7;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   /* height: 20em; */
+}
+
+.review1 {
+  max-width: 50%;
+  background-color: #d9c2b0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #524f4a;
+  margin: auto;
+  padding: 30px;
+}
+
+.review2 {
+  max-width: 50%;
+  background-color: #d9c2b0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #524f4a;
+  margin: auto;
+  padding: 30px;
+}
+
+.review3 {
+  max-width: 50%;
+  background-color: #d9c2b0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #524f4a;
+  margin: auto;
+  padding: 30px;
 }
 
 /* Section 7 */
