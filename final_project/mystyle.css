@@ -125,7 +125,7 @@ nav {
 /* Below nav bar */
 .main {
   display: grid;
-  grid-template-rows: 20em 20em 27em 21em 4em /*2em*/ 40em;
+  grid-template-rows: 20em 20em 27em 21em 4em 5em 30em;
 }
 
 /* Section 2 */
@@ -316,7 +316,6 @@ nav {
 }
 
 .gallery-link {
-  grid-row: 5/6;
   font-family: "Cinzel Decorative";
   font-size: 2em;
   text-decoration: none;
@@ -342,17 +341,38 @@ nav {
   filter: invert(0.4);
 }
 
-/* Section 6 */
-.reviews {
-  position: relative;
-  grid-row: 6/7;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* height: 20em; */
+.vine-divide {
+  z-index: -2;
+  grid-template-columns: 7/8;
 }
 
+.small-vine2 {
+  transform: rotate(90deg);
+  max-width: 35%;
+  margin-top: -13em;
+  margin-left: -2em;
+}
+
+/* Section 6 */
+.reviews {
+  grid-row: 7/8;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 6em;
+}
+
+/* .review-heading {
+  grid-row: 7/8;
+  font-family: "Cinzel Decorative";
+  font-size: 2em;
+  color: #524f4a;
+  text-align: center;
+  margin: 5em;
+} */
+
 .review1 {
+  z-index: 1;
   max-width: 50%;
   background-color: #d9c2b0;
   font-family: Georgia, "Times New Roman", Times, serif;
