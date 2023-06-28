@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel+Decorative&family=Rouge+Script&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel+Decorative&family=Rouge+Script&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amatic+SC&family=Cinzel+Decorative&family=Parisienne&family=Rouge+Script&display=swap");
 
 /* header */
 .announcements {
@@ -112,8 +113,9 @@ footer {
 }
 
 .main {
+  position: relative;
   display: grid;
-  grid-template-rows: 20em 20em 27em 21em 4em 5em 30em;
+  grid-template-rows: 20em 20em 27em 4em 21em 4em 5em 30em;
 }
 
 /* Section 1 */
@@ -298,9 +300,9 @@ footer {
 }
 
 .gallery-link-section {
-  grid-row: 5/6;
-  margin-top: 1em;
-  margin-left: 43.5%;
+  grid-row: 4/5;
+  margin-top: 0.5em;
+  margin-left: 32%;
 }
 
 .gallery-link {
@@ -331,7 +333,7 @@ footer {
 
 /* Section 5 */
 .reviews {
-  grid-row: 7/8;
+  grid-row: 8/9;
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -377,13 +379,14 @@ footer {
 
 .vine-divide {
   z-index: -2;
-  grid-template-columns: 7/8;
+  position: absolute;
+  grid-row: 8/9;
 }
 
 .small-vine2 {
   transform: scaleY(-1) rotate(90deg);
   max-width: 35%;
-  margin-top: -13em;
+  margin-top: -18em;
   margin-left: -2em;
 }
 
@@ -455,11 +458,10 @@ footer {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  margin: 0 10em 0 10em;
 }
 
 .portfolio img {
-  margin: auto;
-  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
