@@ -3,7 +3,7 @@
 
 /* header */
 .announcements {
-  background-color: #d9c2b0;
+  background-color: #cbc3ba;
   font-family: Helvetica;
   margin-bottom: -24px;
   text-align: center;
@@ -296,6 +296,11 @@ footer {
 .gallery-preview {
   position: relative;
   max-width: 100%;
+}
+
+#pic2 {
+  background-color: black;
+  max-height: 99%;
 }
 
 .gallery-preview:hover {
