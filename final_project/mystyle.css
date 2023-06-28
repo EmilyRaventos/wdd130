@@ -467,14 +467,18 @@ footer {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  background-color: white;
+  grid-gap: 0.5em;
+  padding-top: 5em;
 }
 
 .portfolio img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
+  margin: auto 0.5em auto 0;
 }
-
+/* 
 .pic1-full {
   background-image: url("images/Pic1.JPG");
 }
@@ -484,4 +488,4 @@ footer {
   z-index: 3;
 
   background-image: url("images/Pic1-sqaure.JPG");
-}
+} */
