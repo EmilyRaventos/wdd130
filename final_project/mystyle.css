@@ -12,6 +12,8 @@
 .announcements p {
   margin: 0;
   padding: 8px 0;
+  color: white;
+  font-size: small;
 }
 
 header {
@@ -259,27 +261,29 @@ footer {
   grid-column: 1/2;
   max-width: 55%;
   margin: auto;
-  margin-top: 0;
+  margin-top: -2em;
 }
 
 .mission {
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
   position: absolute;
   grid-column: 2/3;
   text-align: left;
-  margin-left: -5em;
+  margin-left: -8em;
   margin-right: 7em;
-  margin-top: 3em;
+  margin-top: 1.75em;
 }
 
 .button-box {
-  grid-column: 2/3;
-  margin-left: 7em;
-  margin-top: 12.75em;
+  position: absolute;
+  grid-column: 1/2;
+  margin-left: 14em;
+  margin-top: 14.5em;
 }
 
 .contact-button {
-  max-width: 35%;
+  max-width: 50%;
 }
 
 /* Section 4 */
@@ -464,4 +468,15 @@ footer {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
+}
+
+.pic1-full {
+  background-image: url("images/Pic1.JPG");
+}
+
+.pic1-full:active {
+  transform: scale(2);
+  z-index: 3;
+
+  background-image: url("images/Pic1-sqaure.JPG");
 }
