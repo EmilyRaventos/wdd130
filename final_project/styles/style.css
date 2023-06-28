@@ -5,13 +5,13 @@
 .announcements {
   background-color: #d9c2b0;
   font-family: Helvetica;
-  margin-bottom: -24px;
+  margin-bottom: -1.5em;
   text-align: center;
 }
 
 .announcements p {
   margin: 0;
-  padding: 8px 0;
+  padding: 0.6em 0;
   color: white;
   font-size: small;
 }
@@ -22,18 +22,18 @@ header {
 
 nav {
   display: grid;
-  grid-template-columns: 193px 193px auto;
-  grid-gap: 10px;
-  margin-top: 24px;
+  grid-template-columns: 12.2em 12.2em auto;
+  grid-gap: 0.6em;
+  margin-top: 1.5em;
   z-index: 1;
 }
 
 .logo {
   box-sizing: border-box;
   grid-column: 1/2;
-  margin: 24px 32px;
+  margin: 1.5em 2em;
   max-width: 100%;
-  padding-right: 48px;
+  padding-right: 3em;
   display: inline;
 }
 
@@ -41,7 +41,7 @@ nav {
   grid-column: 2/3;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
+  grid-gap: 0.25em;
   max-width: 75%;
   margin: auto;
   text-align: center;
@@ -59,7 +59,7 @@ nav {
 
 .pages {
   grid-column: 3/4;
-  grid-gap: 12px;
+  grid-gap: 0.5em;
   margin: 6% 0 0 47%;
 }
 
@@ -87,7 +87,7 @@ footer {
   font-size: small;
   text-align: center;
   line-height: 20%;
-  padding-bottom: 20px;
+  padding-bottom: 1.3em;
 }
 
 .footer-link,
@@ -109,8 +109,8 @@ footer {
 
 /* --------- HOME PAGE --------- */
 #content {
-  max-width: 1600px;
-  margin: 2px -8px;
+  max-width: 100em;
+  margin: 0.01em -0.5em;
   overflow: hidden;
 }
 
@@ -131,7 +131,7 @@ footer {
 
 .vine1 {
   grid-column: 1/2;
-  height: 400px;
+  height: 25em;
   transform: rotate(90deg);
   margin-top: -4.5em;
   margin-left: 1.25em;
@@ -156,7 +156,7 @@ footer {
 
 .vine2 {
   grid-column: 3/4;
-  height: 400px;
+  height: 25em;
   transform: scaleX(-1) rotate(90deg);
   margin-top: -4.5em;
   margin-left: 8.5em;
@@ -252,21 +252,21 @@ footer {
 /* Section 3 */
 .contact-me {
   position: relative;
-  max-width: 100%;
+  max-width: 100em;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .pic-of-ky {
   grid-column: 1/2;
-  max-width: 55%;
+  max-width: 23.25em;
   margin: auto;
   margin-top: -2em;
 }
 
 .mission {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 16px;
+  font-size: 1em;
   position: absolute;
   grid-column: 2/3;
   text-align: left;
@@ -321,7 +321,7 @@ footer {
   color: #524f4a;
 }
 
-.gallery-circles {
+/* .gallery-circles {
   z-index: 3;
   position: absolute;
   bottom: 18px;
@@ -338,7 +338,7 @@ footer {
 
 .gallery-circle:hover {
   filter: invert(0.4);
-}
+} */
 
 /* Section 5 */
 .reviews {
@@ -365,7 +365,7 @@ footer {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #524f4a;
   margin: auto;
-  padding: 30px;
+  padding: 1.9em;
 }
 
 .review2 {
@@ -374,7 +374,7 @@ footer {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #524f4a;
   margin: auto;
-  padding: 30px;
+  padding: 1.9em;
 }
 
 .review3 {
@@ -383,7 +383,7 @@ footer {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #524f4a;
   margin: auto;
-  padding: 30px;
+  padding: 1.9em;
 }
 
 .vine-divide {
