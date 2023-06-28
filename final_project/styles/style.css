@@ -489,3 +489,65 @@ footer {
 
   background-image: url("images/Pic1-sqaure.JPG");
 } */
+
+@media screen and (max-width: 480px) {
+  .main {
+    display: block;
+    height: auto;
+  }
+  .social {
+    grid-column: 1/2;
+    max-width: 100%;
+    margin-top: -3em;
+    margin-left: 1em;
+  }
+  .pages {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em auto 0 4em;
+    grid-gap: -1em;
+    font-size: 0.75em;
+  }
+  nav,
+  footer {
+    flex-direction: column;
+    color: #524f4a;
+  }
+  nav a {
+    display: block;
+    padding: 7px;
+  }
+  /* #hero {
+    margin-top: 04
+  }
+  #hero-msg {
+    margin-top: 0;
+  }
+  #hero-msg h4 {
+    display: none;
+  } */
+  .welcome-message {
+    font-size: 1em;
+    color: #6f7364;
+  }
+  .rivers-card,
+  .camping-card,
+  .rapids-card {
+    margin: 50px auto;
+    width: 60%;
+  }
+  #background {
+    display: none;
+  }
+  .mountains,
+  .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 25px;
+  }
+}
