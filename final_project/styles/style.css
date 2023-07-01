@@ -464,10 +464,16 @@ footer {
 }
 
 /* --------- PORTFOLIO PAGE --------- */
+.portfolio-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+}
+
 .portfolio {
+  grid-column: 1/2;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  background-color: white;
   grid-gap: 0.5em;
   padding-top: 5em;
 }
@@ -478,17 +484,164 @@ footer {
   max-height: 100%;
   margin: auto 0.5em auto 0;
 }
-/* 
-.pic1-full {
-  background-image: url("images/Pic1.JPG");
+
+.image {
+  position: relative;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  margin: auto 0.5em auto 0;
 }
 
-.pic1-full:active {
-  transform: scale(2);
-  z-index: 3;
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  margin-top: 0;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  color: white;
+}
 
-  background-image: url("images/Pic1-sqaure.JPG");
-} */
+.image:hover .overlay {
+  color: white;
+  z-index: 2;
+  background: rgba(88, 87, 87, 0.6);
+  opacity: 1;
+}
+
+.overlay > * {
+  margin: 0.5em;
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.overlay:hover > * {
+  transform: translateY(0);
+}
+
+.title {
+  font-size: 1.25em;
+  /* font-weight: bold; */
+}
+
+.description {
+  font-size: 1em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0.25em;
+}
+
+/* Contact Page */
+/* Contact Page */
+.contactus {
+  margin-top: 1em;
+}
+
+.contact-header {
+  font-size: 2em;
+  text-align: center;
+  font-family: "Cinzel Decorative";
+}
+
+.contact-text {
+  font-size: 75%;
+  font-family: Helvetica, sans-serif, Arial;
+  text-align: center;
+  margin-top: -1em;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0.1;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+#name,
+#mail {
+  height: 30px;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+      By default, textareas have a monospace font */
+  font-family: Helvetica, sans-serif, Arial;
+  font-size: 1em;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.form-button {
+  /* Align buttons with the text fields */
+  padding-left: 35%; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+      between the labels and their text fields */
+  margin-left: 0.5em;
+}
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+
+.moveDown {
+  margin-top: 3em;
+}
 
 @media screen and (max-width: 480px) {
   .main {

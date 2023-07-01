@@ -61,11 +61,6 @@
               <img class="spotify" src="images/spotify-light.jpg" alt="spotify">
             </a>
           </div>
-          <!-- <div class="a03">
-          <a href="https://archiveofourown.org/users/kyjoraven/pseuds/kyjoraven" target="_blank">
-            <img class="ao3" src="images/a03_icon.JPG" alt="A03 icon" width="30px" />
-          </a>
-          </div> -->
         </div>
         
         <div class="pages">
@@ -81,9 +76,33 @@
 
       <!-- Main Content -->
       <main>
-        <p>
-          Coming soon!
+        <div id="feedback"></div>
+        <p class="contact-header">Contact</p>
+        <p class="contact-text">
+          Thank you for your interest in my art! Please fill out the 
+          form below, and I'll get back to you shortly!
         </p>
+        <div class="contactus-page">
+          <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="form-button">
+                <button type="submit">Send</button>
+              </li>
+            </ul>
+          </form>
+        </div>
       </main>
 
       <!-- Footer -->
