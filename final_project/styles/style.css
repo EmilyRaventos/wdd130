@@ -635,7 +635,7 @@ form {
 
 ul {
   list-style: none;
-  padding: 0.1;
+  padding: 0.1px;
   margin: 0;
 }
 
@@ -726,7 +726,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2em auto 0 4em;
-    grid-gap: -1em;
+    grid-gap: 0;
     font-size: 0.75em;
   }
   nav,
